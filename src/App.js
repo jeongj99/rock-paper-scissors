@@ -1,4 +1,5 @@
 import User from './components/User';
+import Game from './components//Game';
 
 import './App.css';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <section className='game'>
         <User />
+        <Game />
       </section>
     </>
   );
