@@ -1,8 +1,8 @@
-import React from 'react'
+import "./Game.css"
 
 export default function Game() {
   return (
-    <div>
+    <div className="game-screen">
       <h1>Display game action here</h1>
     </div>
   )
