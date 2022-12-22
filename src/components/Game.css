@@ -1,4 +1,5 @@
 .game-screen {
   height: 100vh;
+  width: 34%;
   background-color: green;
 }
