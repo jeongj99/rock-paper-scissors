@@ -1,5 +1,7 @@
 import Button from "./Button";
 
+import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
+
 import "./User.css";
 
 export default function User() {
@@ -7,9 +9,15 @@ export default function User() {
     <div className="user-screen">
       <h1>Display user screen here</h1>
       <div className="user-option">
-        <Button rock>Rock</Button>
-        <Button scissors>Scissors</Button>
-        <Button paper>Paper</Button>
+        <Button rock>
+          <FaHandRock />
+          </Button>
+        <Button paper>
+          <FaHandPaper />
+        </Button>
+        <Button scissors>
+          <FaHandScissors />
+        </Button>
       </div>
     </div>
   );
