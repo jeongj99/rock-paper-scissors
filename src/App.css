@@ -5,5 +5,5 @@ body {
 .game {
   height: 100%; 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
