@@ -1,4 +1,35 @@
 .game-screen {
   height: 50vh;
   background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choices {
+  height: 100%;
+  width: 75%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-choice {
+  height: 50%;
+  width: 40%;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.computer-choice {
+  height: 50%;
+  width: 40%;
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
