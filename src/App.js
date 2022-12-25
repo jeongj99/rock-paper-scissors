@@ -7,7 +7,7 @@ import './App.css';
 import React from 'react';
 
 function App() {
-  const [userChoice, setUserChoice] = useState('rock');
+  const [userChoice, setUserChoice] = useState("");
   const [computerChoice, setComputerChoice] = useState('scissors');
 
   return (
