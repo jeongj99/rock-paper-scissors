@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
 }
 
 .computer-choice {
@@ -32,4 +33,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 50px;
 }
