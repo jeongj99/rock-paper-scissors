@@ -5,7 +5,11 @@ import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
 import "./User.css";
 
 export default function User(props) {
-  const {setUserChoice, setComputerChoice} = props;
+  const { setUserChoice, setComputerChoice } = props;
+
+  const getRandomNum = max => {
+    return Math.floor(Math.random() * max);
+  };
 
   const selectRock = () => {
     setUserChoice("rock");
