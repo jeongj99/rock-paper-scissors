@@ -13,12 +13,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+}
+
+.user {
+  height: 50%;
+  width: 40%;
+  background-color: aliceblue;
+}
+
+.user h1 {
+  text-align: center;
+}
+
+.computer {
+  height: 50%;
+  width: 40%;
+  background-color: aliceblue;
+}
+
+.computer h1 {
+  text-align: center;
 }
 
 .user-choice {
-  height: 50%;
-  width: 40%;
   background-color: purple;
   display: flex;
   justify-content: center;
@@ -27,8 +44,6 @@
 }
 
 .computer-choice {
-  height: 50%;
-  width: 40%;
   background-color: cyan;
   display: flex;
   justify-content: center;
