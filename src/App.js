@@ -15,8 +15,18 @@ function App() {
   return (
     <>
       <section className='game'>
-        <Game userChoice={userChoice} computerChoice={computerChoice} userScore={userScore} computerScore={computerScore} />
-        <User setUserChoice={setUserChoice} setComputerChoice={setComputerChoice} />
+        <Game
+          userChoice={userChoice}
+          computerChoice={computerChoice}
+          userScore={userScore}
+          computerScore={computerScore}
+        />
+        <User
+          setUserChoice={setUserChoice}
+          setComputerChoice={setComputerChoice}
+          setUserScore={setUserScore}
+          setComputerScore={setComputerScore}
+        />
       </section>
     </>
   );
