@@ -25,7 +25,21 @@ export default function Game(props) {
           }
         </div>
         <div className="computer-choice">
-          <h1>{props.computerChoice}</h1>
+          {props.computerChoice === "rock" &&
+            <h1>
+              <FaHandRock />
+            </h1>
+          }
+          {props.computerChoice === "paper" &&
+            <h1>
+              <FaHandPaper />
+            </h1>
+          }
+          {props.computerChoice === "scissors" &&
+            <h1>
+              <FaHandScissors />
+            </h1>
+          }
         </div>
       </div>
     </div>
