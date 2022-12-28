@@ -5,7 +5,7 @@ import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
 import "./User.css";
 
 export default function User(props) {
-  const { setUserChoice, setComputerChoice } = props;
+  const { setUserChoice, setComputerChoice, setUserScore, setComputerScore } = props;
 
   const getRandomNum = max => {
     return Math.floor(Math.random() * max);
@@ -22,9 +22,11 @@ export default function User(props) {
         break;
       case 1:
         setComputerChoice("paper");
+        setComputerScore(prev => prev + 1);
         break;
       case 2:
         setComputerChoice("scissors");
+        setUserScore(prev => prev + 1);
         break;
       default:
         setComputerChoice("");
@@ -40,12 +42,14 @@ export default function User(props) {
     switch (num) {
       case 0:
         setComputerChoice("rock");
+        setUserScore(prev => prev + 1);
         break;
       case 1:
         setComputerChoice("paper");
         break;
       case 2:
         setComputerChoice("scissors");
+        setComputerScore(prev => prev + 1);
         break;
       default:
         setComputerChoice("");
@@ -61,9 +65,11 @@ export default function User(props) {
     switch (num) {
       case 0:
         setComputerChoice("rock");
+        setComputerScore(prev => prev + 1);
         break;
       case 1:
         setComputerChoice("paper");
+        setUserScore(prev => prev + 1);
         break;
       case 2:
         setComputerChoice("scissors");
