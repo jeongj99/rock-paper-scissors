@@ -5,7 +5,7 @@ import { FaHandRock, FaHandPaper, FaHandScissors } from "react-icons/fa";
 import "./User.css";
 
 export default function User(props) {
-  const { setUserChoice, setComputerChoice, setUserScore, setComputerScore } = props;
+  const { setUserChoice, setComputerChoice, setUserScore, setComputerScore, setMessage } = props;
 
   const getRandomNum = max => {
     return Math.floor(Math.random() * max);
@@ -19,14 +19,17 @@ export default function User(props) {
     switch (num) {
       case 0:
         setComputerChoice("rock");
+        setMessage("Tie");
         break;
       case 1:
         setComputerChoice("paper");
         setComputerScore(prev => prev + 1);
+        setMessage("Computer Wins");
         break;
       case 2:
         setComputerChoice("scissors");
         setUserScore(prev => prev + 1);
+        setMessage("You Win");
         break;
       default:
         setComputerChoice("");
@@ -43,13 +46,16 @@ export default function User(props) {
       case 0:
         setComputerChoice("rock");
         setUserScore(prev => prev + 1);
+        setMessage("You Win");
         break;
       case 1:
         setComputerChoice("paper");
+        setMessage("Tie");
         break;
       case 2:
         setComputerChoice("scissors");
         setComputerScore(prev => prev + 1);
+        setMessage("Computer Wins");
         break;
       default:
         setComputerChoice("");
@@ -66,13 +72,16 @@ export default function User(props) {
       case 0:
         setComputerChoice("rock");
         setComputerScore(prev => prev + 1);
+        setMessage("Computer Wins");
         break;
       case 1:
         setComputerChoice("paper");
         setUserScore(prev => prev + 1);
+        setMessage("You Win");
         break;
       case 2:
         setComputerChoice("scissors");
+        setMessage("Tie");
         break;
       default:
         setComputerChoice("");

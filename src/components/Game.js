@@ -48,6 +48,9 @@ export default function Game(props) {
           </div>
         </div>
       </div>
+      <div className="message">
+        <h2>{props.message}</h2>
+      </div>
     </div>
   );
 }
