@@ -7,10 +7,11 @@ import './App.css';
 import React from 'react';
 
 function App() {
-  const [userChoice, setUserChoice] = useState("");
-  const [computerChoice, setComputerChoice] = useState('scissors');
+  const [userChoice, setUserChoice] = useState("rock");
+  const [computerChoice, setComputerChoice] = useState("rock");
   const [userScore, setUserScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
+  const [message, setMessage] = useState("");
 
   return (
     <>
@@ -20,12 +21,14 @@ function App() {
           computerChoice={computerChoice}
           userScore={userScore}
           computerScore={computerScore}
+          message={message}
         />
         <User
           setUserChoice={setUserChoice}
           setComputerChoice={setComputerChoice}
           setUserScore={setUserScore}
           setComputerScore={setComputerScore}
+          setMessage={setMessage}
         />
       </section>
     </>
