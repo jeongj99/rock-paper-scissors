@@ -1,6 +1,5 @@
 .user-screen {
   height: 35vh;
-  background-color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,5 +7,6 @@
 }
 
 .user-option {
-  background-color: red;
+  background-color: white;
+  border: 5px black solid
 }

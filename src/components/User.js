@@ -91,7 +91,7 @@ export default function User(props) {
 
   return (
     <div className="user-screen">
-      <h1>Display user screen here</h1>
+      <h1>Choose one:</h1>
       <div className="user-option">
         <Button rock onClick={selectRock}>
           <FaHandRock />
