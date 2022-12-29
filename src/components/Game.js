@@ -5,7 +5,7 @@ import "./Game.css";
 export default function Game(props) {
   return (
     <div className="game-screen">
-      <h1>Rock Paper Scissors</h1>
+      <h1 className="title">Rock Paper Scissors</h1>
       <div className="choices">
         <div className="user">
           <h1>User Score: {props.userScore}</h1>
