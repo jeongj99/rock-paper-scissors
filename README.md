@@ -2,7 +2,7 @@
 A react-based project that allows users to play rock paper scissors against a computer. 
 
 ## GIFs
-
+!["Playing rock paper scissors"](https://github.com/jeongj99/rock-paper-scissors/blob/main/docs/game-demo.gif?raw=true)
 
 ## Dependencies
 - classnames
